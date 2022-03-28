@@ -7,7 +7,7 @@ function App() {
   const [pass, setPass] = useState("");
   const [ListOfRooms, setListOfRooms] = useState([]);
   const addFriend = () => {
-    Axios.post("http://localhost:3001/addfriend", {
+    Axios.post("https://m-e-n-h-p.herokuapp.com/addfriend", {
       room: room,
       pass: pass,
     })
@@ -26,7 +26,7 @@ function App() {
       });
   };
   useEffect(() => {
-    Axios.get("http://localhost:3001/read", {
+    Axios.get("https://m-e-n-h-p.herokuapp.com/read", {
       room: room,
       pass: pass,
     })
@@ -38,7 +38,7 @@ function App() {
       });
   }, []);
   const deleteR = (id) => {
-    Axios.delete(`http://localhost:3001/delete/${id}`).then(() => {
+    Axios.delete(`https://m-e-n-h-p.herokuapp.com/delete/${id}`).then(() => {
       setListOfRooms(
         ListOfRooms.filter((val) => {
           return val._id != id;
