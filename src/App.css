@@ -1,0 +1,43 @@
+.App {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.inputs {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aqua;
+  height: 50vh;
+}
+.inputs input {
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding-left: 1rem;
+}
+.listOfRooms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.roomContainer {
+  display: flex;
+  flex-direction: row;
+}
+.room {
+  width: 500px;
+  height: 60px;
+  background-color: aqua;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  margin: 10px;
+}
+.room h3 {
+  margin-left: 10px;
+}
